@@ -9,5 +9,6 @@ def sum_double(first_num,second_num)
 	end	
 end
 
-puts sum_double(5,6);
-puts sum_double(5,5);
+puts sum_double(1,2)
+puts sum_double(3,2)
+puts sum_double(2,2)
