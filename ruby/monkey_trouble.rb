@@ -7,6 +7,6 @@ def monkey_trouble(a_smile, b_smile)
 		return false	
 	end	
 end
-puts monkey_trouble(false,false) ? "In trouble": "Not in trouble"
-puts monkey_trouble(true,true) ? "In trouble" : "Not in trouble"
-puts monkey_trouble(true,false) ? "In trouble" : "Not in trouble"
+puts monkey_trouble(false,false) ? "True": "False"
+puts monkey_trouble(true,true) ? "True" : "False"
+puts monkey_trouble(true,false) ? "True" : "False"
