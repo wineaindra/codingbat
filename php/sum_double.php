@@ -13,6 +13,7 @@
 		}
 	}
 	
-	echo sum_double(2,3); echo "\n";
-	echo sum_double(3,3); echo "\n";
+	echo sum_double(1,2); echo "\n";
+	echo sum_double(3,2); echo "\n";
+	echo sum_double(2,2); echo "\n";
 ?>
