@@ -12,8 +12,8 @@
 			return $result;
 		}
 	}
-
 	echo diff21(19); echo "\n";
 	echo diff21(10); echo "\n";
 	echo diff21(21); echo "\n";
+	echo diff21(25); echo "\n";
 ?>

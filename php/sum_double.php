@@ -12,7 +12,6 @@
 			return $result;
 		}
 	}
-	
 	echo sum_double(1,2); echo "\n";
 	echo sum_double(3,2); echo "\n";
 	echo sum_double(2,2); echo "\n";
