@@ -8,7 +8,7 @@
 		else
 			return false;
 	}
-	echo monkey_trouble(true,true) ? "In trouble" : "Not in trouble"; echo "\n";
-	echo monkey_trouble(false,false)? "In trouble" : "Not in trouble"; echo "\n";
-	echo monkey_trouble(true,false)? "In trouble": "Not in trouble"; echo "\n";
+	echo monkey_trouble(true,true) ? "True" : "False"; echo "\n";
+	echo monkey_trouble(false,false)? "True" : "False"; echo "\n";
+	echo monkey_trouble(true,false)? "True" : "False"; echo "\n";
 ?>
