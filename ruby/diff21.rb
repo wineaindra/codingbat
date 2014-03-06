@@ -1,13 +1,7 @@
 def diff21(n)
-	if n > 21
-		result=(n-21)*2
-		return result
-		elsif 
-		result=(21-n)
-		return result
-	end
+	return (n-21).abs * (n>21 ? 2 : 1)
 end
-puts diff21(19)
-puts diff21(10)
-puts diff21(21)
-puts diff21(25)
+puts diff21(19)==2 ? "pass" : "fail"
+puts diff21(10)==11 ? "pass" : "fail"
+puts diff21(21)==0 ? "pass" : "fail"
+puts diff21(25)==8 ? "pass" : "fail"
