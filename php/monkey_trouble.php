@@ -1,14 +1,9 @@
 <?php
 	function monkey_trouble($a_smile, $b_smile)
 	{
-		if  ($a_smile==true && $b_smile==true) 
-			return true;
-		elseif ($a_smile==false && $b_smile==false)
-			return true;
-		else
-			return false;
+		return ($a_smile && $b_smile) || !($a_smile || $b_smile);
 	}
-	echo monkey_trouble(true,true) ? "True" : "False"; echo "\n";
-	echo monkey_trouble(false,false)? "True" : "False"; echo "\n";
-	echo monkey_trouble(true,false)? "True" : "False"; echo "\n";
+	echo monkey_trouble(true,true) ? "pass" : "fail"; echo "\n";
+	echo monkey_trouble(false,false)? "pass" : "fail"; echo "\n";
+	echo monkey_trouble(true,false)? "fail" : "pass"; echo "\n";
 ?>
