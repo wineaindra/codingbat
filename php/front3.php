@@ -1,22 +1,11 @@
 <?php
 	function front3($string)
 	{
-		if (strlen($string) > 3)
-		{
-			$threewords=substr($string,0,3);
-			for ($i=0; $i < 3; $i++) 
-			{ 
-				echo $threewords;
-			}
-
-		}
-		else
-			for ($i=0; $i < 3; $i++)
-			{ 
-				echo $string;
-			}
+		$threechar=substr($string,0,3);
+		return $threechar.$threechar.$threechar;
 	}
-	echo front3("Java"); echo "\n";
-	echo front3("abc"); echo "\n";
-	echo front3("Chocolate"); echo "\n";
+	echo front3("Java")=="JavJavJav" ? "pass" : "fail"; echo "\n";
+	echo front3("abc")=="abcabcabc" ? "pass" : "fail"; echo "\n";
+	echo front3("Chocolate")=="ChoChoCho" ? "pass" : "fail"; echo "\n";
+	echo front3("ab")=="ababab" ? "pass" : "fail"; echo "\n";
 ?>
