@@ -1,8 +1,7 @@
 <?php 
 	function missing_char($string,$n)
 	{
-		$word= $string{$n};
-		return str_replace($word,"",$string);
+		return str_replace($string{$n},"",$string);
 	}
 	echo missing_char("kitten",1)=="ktten" ? "pass" : "fail"; echo "\n";
 	echo missing_char("kitten",0)=="itten" ? "pass" : "fail"; echo "\n";
