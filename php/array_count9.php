@@ -1,7 +1,4 @@
 <?php
-	// $arr=array(1,2,9,4,9,3);
-	// $counts=array_count_values($arr);
-	// echo $counts[9]; echo "\n";
 	function array_count9($arr)
 	{
 		$count=array_count_values($arr);
