@@ -10,7 +10,7 @@
 		$result1.=$str;
 		return $result1;
 	}
-	echo string_spolosion("Code"); echo "\n";
-	echo string_spolosion("abc"); echo "\n";
-	echo string_spolosion("ab"); echo "\n";
+	echo string_spolosion("Code")=="CCoCodCode" ? "pass" : "fail"; echo "\n";
+	echo string_spolosion("abc")=="aababc" ? "pass" : "fail"; echo "\n";
+	echo string_spolosion("ab")=="aab" ? "pass" : "fail"; echo "\n";
 ?>
