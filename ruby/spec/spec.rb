@@ -5,6 +5,7 @@ require_relative "../sum_double"
 require_relative "../string_times"
 require_relative "../array123"
 require_relative "../array_front9"
+require_relative "../array_count9"
 
 describe "sleep_in" do
 	it "should return true if we are on vacation" do
@@ -75,13 +76,19 @@ end
 
 describe "array_front9" do
 	it "should return True if one of the first 4 elements in the array is a 9" do
-		array_front9([1, 2, 9, 3, 4]). should be_true
+		array_front9([1, 2, 9, 3, 4]).should be_true
 	end
 	it "should return False if one of the first 4 elements in the array is not 9" do
 		array_front9([1, 2, 3, 4, 9]).should be_false
 	end
 end
 
+describe "array_count9" do
+	it "should return the number of 9's in the array"
+		array_count9([1, 2, 9]).should eq(1)
+		array_count9([1, 9, 9, 3, 9]).should eq(3)
+	end
+end
 
 
 
