@@ -2,7 +2,8 @@ require_relative "../monkey_trouble"
 require_relative "../sleep_in"
 require_relative "../diff21"
 require_relative "../sum_double"
-require_relative "../string_times.rb"
+require_relative "../string_times"
+require_relative "../array123"
 
 describe "sleep_in" do
 	it "should return true if we are on vacation" do
@@ -61,6 +62,16 @@ describe "string_times" do
 		string_times("Hi",3).should eq("HiHiHi")
 	end
 end
+
+describe "array123" do
+	it "should return true if 1,2,3 appears in the array somewhere" do
+		array123([1, 1, 2, 3, 1]).should be_true
+	end
+	it "should return false if 1,2,3 is not appear in the array somewhere" do
+		array123([1, 1, 2, 4, 1]).should be_false
+	end
+end
+
 
 
 
