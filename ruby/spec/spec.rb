@@ -2,6 +2,7 @@ require_relative "../monkey_trouble"
 require_relative "../sleep_in"
 require_relative "../diff21"
 require_relative "../sum_double"
+require_relative "../string_times.rb"
 
 describe "sleep_in" do
 	it "should return true if we are on vacation" do
@@ -54,5 +55,12 @@ describe "sum_double" do
 		sum_double(3,3).should eq(12)
 	end
 end
+
+describe "string_times" do
+	it "should return a larger string that is n copies of the original string" do
+		string_times("Hi",3).should eq("HiHiHi")
+	end
+end
+
 
 
