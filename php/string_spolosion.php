@@ -1,14 +1,16 @@
 <?php
 	function string_spolosion($str)
 	{
-		$result="";
-		for ($i=0; $i < strlen($str) ; $i++) 
+		$len=strlen($str);
+		$result1=substr($str, 0,-($len-1));
+		for ($i=2; $i < $len; $i++) 
 		{ 
-			$result.=$str[$i];
-			echo $result;
+			$result1.=substr($str,0,-($len-$i));
 		}
+		$result1.=$str;
+		return $result1;
 	}
-	string_spolosion("Code"); echo "\n";
-	string_spolosion("abc"); echo "\n";
-	string_spolosion("ab"); echo "\n";
+	echo string_spolosion("Code"); echo "\n";
+	echo string_spolosion("abc"); echo "\n";
+	echo string_spolosion("ab"); echo "\n";
 ?>
