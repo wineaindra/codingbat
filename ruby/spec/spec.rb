@@ -7,6 +7,7 @@ require_relative "../array123"
 require_relative "../array_front9"
 require_relative "../array_count9"
 require_relative "../string_spolosion"
+require_relative "../last2"
 
 describe "sleep_in" do
 	it "should return true if we are on vacation" do
@@ -96,6 +97,14 @@ describe "string_spolosion" do
 		string_spolosion("Code").should eq("CCoCodCode")
 		string_spolosion("abc").should eq("aababc")
 		string_spolosion("ab").should eq("aab")
+	end
+end
+
+describe "last2" do
+	it "should return the the count of the number of times that a substring length 2 appears in the string and also as the last 2 chars of the string" do
+		last2("hixxhi").should eq(1)
+		last2("axxxaaxx").should eq(2)
+		last2("aabbaabbaabbaa").should eq(3)
 	end
 end
 
