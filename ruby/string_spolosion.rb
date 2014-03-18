@@ -1,9 +1,11 @@
 def string_spolosion(str)
-	i=0
+	strlen=str.length
 	result=""
-	while i < str.length
-		puts result << str[i]
-		i += 1
+	for i in 0..(strlen-1)
+		result << str[0..i]
+		i+=1
 	end
+	return result
 end
-string_spolosion("Code")
+
+

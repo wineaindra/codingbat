@@ -6,6 +6,7 @@ require_relative "../string_times"
 require_relative "../array123"
 require_relative "../array_front9"
 require_relative "../array_count9"
+require_relative "../string_spolosion"
 
 describe "sleep_in" do
 	it "should return true if we are on vacation" do
@@ -84,9 +85,17 @@ describe "array_front9" do
 end
 
 describe "array_count9" do
-	it "should return the number of 9's in the array"
+	it "should return the number of 9's in the array" do
 		array_count9([1, 2, 9]).should eq(1)
 		array_count9([1, 9, 9, 3, 9]).should eq(3)
+	end
+end
+
+describe "string_spolosion" do
+	it "should return a string like CCoCodCode if argument is Code" do
+		string_spolosion("Code").should eq("CCoCodCode")
+		string_spolosion("abc").should eq("aababc")
+		string_spolosion("ab").should eq("aab")
 	end
 end
 
