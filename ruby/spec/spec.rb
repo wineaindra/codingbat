@@ -8,6 +8,7 @@ require_relative "../array_front9"
 require_relative "../array_count9"
 require_relative "../string_spolosion"
 require_relative "../last2"
+require_relative "../string_bits"
 
 describe "sleep_in" do
 	it "should return true if we are on vacation" do
@@ -105,6 +106,14 @@ describe "last2" do
 		last2("hixxhi").should eq(1)
 		last2("axxxaaxx").should eq(2)
 		last2("aabbaabbaabbaa").should eq(3)
+	end
+end
+
+describe "string_bits" do
+	it "should return a new string made of every other char starting with the first" do
+		string_bits("Hello").should eq("Hlo")
+		string_bits("Hi").should eq("H")
+		string_bits("Heeololeo").should eq("Hello")
 	end
 end
 
